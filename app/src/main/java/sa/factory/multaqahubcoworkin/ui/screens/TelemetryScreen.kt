@@ -64,9 +64,9 @@ fun TelemetryScreen(state: MultaqaHubUiState) {
         ) {
             Column(modifier = Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
                 Text("معايير الامتثال والحوكمة", fontWeight = FontWeight.Bold, color = BrandTextPrimary, fontSize = 14.sp)
-                Text("✓ تشفير كامل للاتصال الطرفي (AES-256 GCM)", color = BrandTextSecondary, fontSize = 12.sp)
-                Text("✓ مطابقة اشتراطات هيئة الاتصالات والفضاء والتقنية", color = BrandTextSecondary, fontSize = 12.sp)
-                Text("✓ مزامنة فورية خالية من الإيموجي ومتوافقة مع المعايير السعودية", color = BrandTextSecondary, fontSize = 12.sp)
+                Text("[معتمد] تشفير كامل للاتصال الطرفي (AES-256 GCM)", color = BrandTextSecondary, fontSize = 12.sp)
+                Text("[معتمد] مطابقة اشتراطات هيئة الاتصالات والفضاء والتقنية", color = BrandTextSecondary, fontSize = 12.sp)
+                Text("[معتمد] مزامنة فورية خالية من الإيموجي ومتوافقة مع المعايير السعودية", color = BrandTextSecondary, fontSize = 12.sp)
             }
         }
     }

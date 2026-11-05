@@ -40,7 +40,7 @@ fun CheckoutScreen(
                 modifier = Modifier.fillMaxWidth()
             ) {
                 Column(modifier = Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
-                    Text("✓ تم اعتماد الطلب بنجاح: ${state.lastOrder.orderId}", fontWeight = FontWeight.Bold, color = BrandPrimary)
+                    Text("[مكتمل] تم اعتماد الطلب بنجاح: ${state.lastOrder.orderId}", fontWeight = FontWeight.Bold, color = BrandPrimary)
                     Text("الإجمالي المسدد: ${state.lastOrder.totalSar} ر.س (شامل 15% ضريبة)", fontSize = 13.sp, color = BrandTextPrimary)
                     Text("بوابة الدفع: ${state.lastOrder.paymentMethod}", fontSize = 11.sp, color = BrandTextSecondary)
                 }
@@ -67,7 +67,7 @@ fun CheckoutScreen(
                             Text(item.title, color = BrandTextPrimary, fontSize = 13.sp, modifier = Modifier.weight(1f))
                             Text("${item.priceSar} ر.س", color = BrandSecondary, fontWeight = FontWeight.Bold, fontSize = 13.sp)
                             IconButton(onClick = { viewModel.removeFromCart(item) }) {
-                                Text("✕", color = Color.Red, fontWeight = FontWeight.Bold)
+                                Text("X", color = Color.Red, fontWeight = FontWeight.Bold)
                             }
                         }
                     }
